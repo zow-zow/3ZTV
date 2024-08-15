@@ -1,0 +1,76 @@
+body {
+    background-color: #e2f0d9;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.support-text, .game-title {
+    color: #345830;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.qr-image {
+    border: 3px solid #345830;
+    padding: 5px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+}
+
+table {
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+td {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #6a8a82;
+    background-color: #cde6d0;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.marked {
+    background-color: #ffff00; /* 标记为黄色 */
+}
+
+.mine {
+    background-color: #ff0000;
+}
+
+#music-player {
+    background-color: #d0f0c0; /* 淡绿色 */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    position: fixed;
+    top: 50%;
+    right: -300px; /* Initially hidden */
+    transform: translateY(-50%);
+    transition: right 0.3s;
+    width: 300px;
+}
+
+#music-player:hover {
+    right: 0; /* Show on hover */
+}
+
+#music-player p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #345830;
+}
+
+#change-music-button {
+    background-color: #345830;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}

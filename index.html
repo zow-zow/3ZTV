@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>3Z电视</title>
+<link rel="icon" href="/favicon.jpg" type="image/x-icon">
+<link rel="stylesheet" href="wcss/styles.css"> <!-- 引入外部 CSS 文件 -->
+</head>
+<body>
+<div>
+    <p class="support-text">支持群主，赞赏捐赠</p>
+    <p class="support-text">微信扫码打开</p>
+    <img src="http://3z.133.w21.net/tyjz.png" alt="捐赠二维码" class="qr-image">
+    <p class="game-title">网络卡了？扫下雷先</p>
+    <p class="game-title">长按(右键)标记地雷</p>
+    <table id="board"></table>
+</div>
+
+<!-- 音乐播放器代码 -->
+<div id="music-player">
+    <audio controls autoplay>
+        <source type="audio/mpeg">
+        <!-- 添加更多音乐文件 -->
+        Your browser does not support the audio element.
+    </audio>
+    <p id="current-music">当前播放：</p>
+    <button id="change-music-button">切换音乐</button>
+</div>
+
+<!-- 引入音乐播放器的 JavaScript 文件 -->
+<script src="wjs/musicPlayer.js"></script>
+<!-- 扫雷游戏的 JavaScript 代码 -->
+<script src="wjs/minesweeper.js"></script>
+</body>
+</html>
